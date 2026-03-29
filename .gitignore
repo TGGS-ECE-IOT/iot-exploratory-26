@@ -1,0 +1,32 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Environment and local config
+.env
+.env.*
+*.local.toml
+
+# PlatformIO / ESP-IDF build artifacts
+**/.pio/
+**/build/
+**/.sconsign*
+
+# Runtime logs and data
+**/logs/
+**/data/spool.db

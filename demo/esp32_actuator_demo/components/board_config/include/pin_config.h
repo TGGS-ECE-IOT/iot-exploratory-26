@@ -1,0 +1,30 @@
+#ifndef PIN_CONFIG_H
+#define PIN_CONFIG_H
+
+#include "driver/gpio.h"
+#include "driver/i2c.h"
+
+#define OLED_SDA_GPIO GPIO_NUM_21
+#define OLED_SCL_GPIO GPIO_NUM_22
+#define OLED_I2C_PORT I2C_NUM_0
+#define OLED_ADDR 0x3C
+#define OLED_WIDTH 128
+#define OLED_HEIGHT 32
+
+#define SERVO_GPIO GPIO_NUM_18
+
+#define RELAY_GPIO GPIO_NUM_13
+#define RELAY_ACTIVE_LEVEL 0
+#define RELAY_OFF_HIGH_Z 1
+
+#define BUZZER_GPIO GPIO_NUM_23
+
+#define LED_RED_GPIO GPIO_NUM_25
+#define LED_YELLOW_GPIO GPIO_NUM_26
+#define LED_GREEN_GPIO GPIO_NUM_27
+
+#define BUTTON_GPIO GPIO_NUM_32
+#define BUTTON_ACTIVE_LEVEL 0
+#define BUTTON_DEBOUNCE_MS 25
+
+#endif

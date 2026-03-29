@@ -1,0 +1,37 @@
+mode = "gateway"
+
+[mqtt]
+host = "127.0.0.1"
+port = 1883
+client_id = "rpi-gateway"
+keepalive_sec = 60
+
+[logging]
+directory = "./logs"
+app_file = "gateway.log"
+message_file = "messages.log"
+level = "INFO"
+
+[observability]
+enabled = true
+host = "0.0.0.0"
+port = 8080
+
+[spool]
+enabled = true
+path = "./data/spool.db"
+flush_interval_sec = 5
+max_batch_size = 200
+
+[cloud_pubsub]
+enabled = false
+project_id = "your-gcp-project"
+publish_topic = "iot-gateway-events"
+command_subscription = "iot-gateway-commands-sub"
+
+[simulator]
+enabled = false
+interval_sec = 3.0
+site_id = "kmutnb-lab-a"
+sensor_node_id = "esp32-01"
+actuator_device_id = "esp32-act-01"
