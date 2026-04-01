@@ -26,6 +26,8 @@ Official event details:
   - `rpi_gateway/`: Raspberry Pi gateway service (Python + MQTT + optional Google Cloud Pub/Sub)
 - `tutorial/`
   - Workshop guides, setup notes, hardware tutorials, and reference materials
+- `lecture/`
+  - Lecture and reference materials, script examples for *Data Analytics and AI* workshop
 
 ## Quick start
 
